@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Manager (Vulnerable)</title>
+  <!-- Adding vulnerable server information disclosure -->
+  <meta name="generator" content="Task Manager Version 1.0 - DEV MODE">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>📝 Task Manager</h1>
+      <div class="header-actions">
+        <input type="text" id="searchInput" placeholder="Search tasks...">
+        <button id="darkModeToggle">🌙</button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="task-controls">
+        <input type="text" id="taskInput" placeholder="Add a new task...">
+        <input type="date" id="dueDateInput">
+        <button id="addBtn">Add</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
